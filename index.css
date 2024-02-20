@@ -163,13 +163,13 @@ Header Styling
   box-sizing: border-box;
 }
 
-.header {
+/* .header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./images/solar-panels.png) center/cover no-repeat;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-}
+} */
 .banner {
   text-align: center;
   position: absolute;
