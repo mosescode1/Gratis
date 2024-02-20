@@ -109,20 +109,23 @@ More Global Style
 .btn {
   text-transform: uppercase;
   color: var(--clr-white);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.754rem;
   background: var(--clr-primary);
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
   transition: var(--transition);
-  font-size: 1rem;
+  font-size: 0.765rem;
   cursor: pointer;
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0, 2);
 }
 .btn:hover {
   background: var(--clr-white);
+  border: 1px solid black;
   color: var(--clr-primary);
+  outline: 2px solid var(--clr-primary);
+  outline-offset: -5.5px;
 }
 
 .clearfix::after,
@@ -299,5 +302,57 @@ ABOUT
   }
   .about-text {
     padding-left: 3rem;
+  }
+}
+
+/* 
+============
+PRODUCTS
+============
+ */
+.products article {
+  margin: 2rem 0;
+}
+.product-text {
+  color: var(--clr-gray-5);
+  max-width: 26rem;
+}
+.product-inventory {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.product-inventory img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .product-inventory img {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  .product-inventory img {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-info {
+    float: left;
+    width: 30%;
+  }
+  .product-inventory {
+    float: left;
+    width: 70%;
+    padding-left: 2rem;
+  }
+  .product {
+    margin-bottom: 0;
+    padding: 0 1rem;
   }
 }
